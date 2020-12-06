@@ -2,4 +2,111 @@
     padding : 0;
     margin : 0;
     box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
+
+html,body{
+    background-color : snow;
+}
+
+.main-container{
+    background-color : rgb(233, 233, 233);
+    width : 70%;
+    margin : auto;
+    position : relative;
+    top : 50px;
+}
+
+/*The header of the container starts here*/
+
+.main-container-header{
+    padding : 15px 35px;
+    border-bottom: 1px solid gray;
+}
+
+.main-container-header h1{
+    font-size : 1.5rem;
+    color : #b14b4b;
+}
+
+/*The body of the container starts here*/
+
+.main-container-body{
+    padding : 15px 35px;
+}
+
+/*first row starts here*/
+
+.first-row{
+    display : flex;
+    justify-content: space-between;
+}
+
+.first-row h2{
+    font-size : 1.3rem;
+    color : #b14b4b;
+}
+
+.budget-form{
+    display : flex;
+    flex-direction: column;
+    flex-basis : 35%;
+}
+
+.budget-form input,.budget-form button{
+    font-size : 1rem;
+    outline : none;
+    border : none;
+    padding : 5px;
+    border-radius: 3px;
+}
+
+.budget-form button{
+    align-self: flex-start;
+    font-weight : 600;
+    color : white;
+    background-color : #387adf;
+    cursor: pointer;
+    transition: all ease 1s;
+    position : relative;
+    top : 10px;
+}
+
+.budget-form button:hover{
+    background: transparent;
+    color : #387adf;
+}
+
+.budget,.expenses,.balance{
+    display : flex;
+    flex-direction: column;
+}
+
+.first-row .fa,.first-row p{
+    align-self: center;
+}
+
+.first-row .fa{
+    font-size : 2.3rem;
+    color : #22559c;
+    padding : 10px 0px;
+}
+
+.first-row p{
+    font-size : 1.5rem;
+    font-weight : 600;
+}
+
+.budget p{
+    color : #317b22;
+}
+
+.expenses p{
+    color : #b14b4b;
+}
+
+.balance p{
+    color : rgb(73, 73, 73);
+}
+
+/*second row starts here*/
