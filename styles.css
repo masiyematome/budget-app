@@ -111,6 +111,46 @@ html,body{
 
 /*second row starts here*/
 
+.main-container-body .second-row{
+    display: flex;
+    justify-content: space-between;
+    padding : 35px 0px;
+}
+
+.expense-form{
+    flex-basis: 35%;
+    display:flex;
+    flex-direction: column;
+}
+
+.expense-form input,.expense-form button{
+    padding : 5px;
+    outline : none;
+    border : none;
+    border-radius: 3px;
+    font-size : 1rem;
+}
+
+.expense-form label:nth-of-type(2){
+    padding : 10px 0px 0px;
+}
+
+.expense-form button{
+    align-self: flex-start;
+    font-weight : 600;
+    color : white;
+    background-color : #387adf;
+    cursor: pointer;
+    transition: all ease 1s;
+    position : relative;
+    top : 10px;
+}
+
+.expense-form button:hover{
+    background: transparent;
+    color : #387adf;
+}
+
 /*Footer starts here*/
 
 .main-container-footer{
