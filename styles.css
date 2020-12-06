@@ -110,3 +110,12 @@ html,body{
 }
 
 /*second row starts here*/
+
+/*Footer starts here*/
+
+.main-container-footer{
+    padding : 5px 35px;
+    text-align: center;
+    font-size : 0.9rem;
+    border-top : 1px solid gray;
+}
