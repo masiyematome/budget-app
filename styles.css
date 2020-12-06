@@ -40,6 +40,7 @@ html,body{
 .first-row{
     display : flex;
     justify-content: space-between;
+    padding : 0px 0px 15px;
 }
 
 .first-row h2{
@@ -115,6 +116,7 @@ html,body{
     display: flex;
     justify-content: space-between;
     padding : 35px 0px;
+    border-top : 1px solid gray;
 }
 
 .expense-form{
@@ -191,6 +193,17 @@ html,body{
     pointer-events: none;
 }
 
+.fall{
+    opacity : 0;
+    transform: translate(30%) rotateZ(10deg);
+    transition: ease-in-out 0.7s;
+}
+
+.checked{
+    opacity : 0.5;
+    text-decoration: line-through;
+    transition: ease-in-out 1s;
+}
 
 /* .expense-div button{
 

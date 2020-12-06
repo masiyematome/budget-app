@@ -8,6 +8,7 @@ const expensesList = document.querySelector(".expenses-list");
 //Event Listeners
 
 addExpenseButton.addEventListener("click",addExpense);
+expensesList.addEventListener("click",deleteOrCheck);
 
 //Functions
 
@@ -28,7 +29,7 @@ function addExpense(ev){
 
         const newExpenseAmount = document.createElement("h2");
         newExpenseAmount.classList.add("expense-amount");
-        newExpenseAmount.innerText = expenseAmountInput.value;
+        newExpenseAmount.innerText = "R" + expenseAmountInput.value;
         newExpenseItem.appendChild(newExpenseAmount);
 
         const buttonsContainer = document.createElement("span");
@@ -51,4 +52,25 @@ function addExpense(ev){
         expenseAmountInput.value = "";
 
     }
+}
+
+function deleteOrCheck(ev){
+    const clickedItem = ev.target;
+
+    if(clickedItem.classList[0] == "delete-button"){
+        const buttonsParent = clickedItem.parentElement;
+        const expenseItem = buttonsParent.parentElement;
+        expenseItem.classList.add("fall");
+
+        expenseItem.addEventListener("transitionend",function(){
+        expenseItem.remove();
+        })
+    }
+
+    else if(clickedItem.classList[0] == "check-button"){
+        const buttonsParent = clickedItem.parentElement;
+        const expenseItem = buttonsParent.parentElement;
+        expenseItem.classList.toggle("checked");
+    }
+
 }
