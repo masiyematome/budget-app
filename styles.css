@@ -151,6 +151,51 @@ html,body{
     color : #387adf;
 }
 
+.expenses-list{
+    flex-basis: 53%;
+}
+
+.new-expense-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-expense-item h2{
+    color : rgb(80, 80, 80);
+    font-size : 1.05rem;
+    flex-basis : 42%;
+}
+
+.new-expense-item button{
+    outline : none;
+    border : none;
+    padding : 5px;
+    background-color : transparent;
+    cursor: pointer;
+    font-size : 1.2rem;
+}
+
+.new-expense-item button:hover{
+    transform: scale(0.8);
+}
+
+.new-expense-item button:nth-of-type(1){
+    color : #6ec189;
+}
+
+.new-expense-item button:nth-of-type(2){
+    color : indianred;
+}
+
+.new-expense-item button .fa{
+    pointer-events: none;
+}
+
+
+/* .expense-div button{
+
+} */
+
 /*Footer starts here*/
 
 .main-container-footer{
