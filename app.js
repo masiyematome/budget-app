@@ -71,6 +71,8 @@ function addExpense(ev){
         expenseInput.value = "";
         expenseAmountInput.value = "";
 
+        getBudget();
+
     }
 }
 
